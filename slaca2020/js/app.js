@@ -1,0 +1,1 @@
+fildText.document.designMode = "On";     

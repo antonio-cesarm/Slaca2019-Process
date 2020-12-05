@@ -1,0 +1,96 @@
+header {
+  overflow: hidden;
+  background-color: $colorHeader;
+  height: 6.8rem;
+  margin: 0;
+  padding: 0;
+  .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header-tittle p {
+      font-size: 1.4rem;
+      padding: 0 0;
+      margin: 0;
+      margin: 0.5rem 0;
+      color: $secondaryColor;
+    }
+    .header-tittle h1 {
+      font-size: 2.2rem;
+      font-weight: normal;
+      padding: 0;
+      margin: 0;
+      color: $secondaryColor;
+    }
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondaryColor;
+    border: 0.1rem solid $secondaryColor;
+    background-color: $colorHeader;
+    font-family: $roboto;
+    border-radius: 4px;
+    width: 7.5rem;
+    height: 3.4rem;
+    padding: 0 2rem;
+    p {
+      padding: 0 0.2rem;
+    }
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: $roboto;
+    p {
+      color: #333333;
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0.5rem 0;
+    }
+    .user-email {
+      font-size: 1.4rem;
+    }
+  }
+  .user-data {
+    display: flex;
+  }
+  .user-avatar-model {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333333;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    .content-avatar img {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .notification {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: $colorNotification;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .section-tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 78.3rem;
+    height: 5.2rem;
+    // border: 1px solid red;
+    p {
+      font-family: $quickSand;
+      font-size: 2rem;
+      font-weight: 900;
+      color: $primaryColor;
+      letter-spacing: 0.05em;
+      line-height: 2.5rem;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .aside-buttons {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .buttons {
+      display: flex;
+      .btn {
+        color: #fff;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 0.4rem;
+        margin-left: 0.5rem;
+      }
+      .btn-large {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12rem;
+        height: 3.1rem;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 1.6rem;
+        p {
+          margin-left: 0.5rem;
+        }
+      }
+      .btn-small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.3rem;
+        height: 3.1rem;
+        img {
+          width: 1.9rem;
+          height: 1.9rem;
+        }
+      }
+    }
+    .ask-work {
+      font-family: $roboto;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.05em;
+      padding: 0;
+      margin: 0;
+      color: $primaryColor;
+    }
+  }
+}

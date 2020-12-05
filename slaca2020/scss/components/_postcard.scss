@@ -1,0 +1,67 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid $graylightColor;
+  border-radius: $boderRadiusLg;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem $graylightColor;
+  background-color: #fff;
+  margin: 1rem 0;
+  &:hover {
+    background-color: $headerColor;
+    cursor: pointer;
+  }
+  .post-tittle {
+    font-family: $quickSand;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin: 2rem 1rem 0rem 1rem;
+    color: $primaryColor;
+  }
+  .post-author {
+    font-family: $quickSand;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: 1rem 0rem 0.5rem 1rem;
+    padding: 0;
+    color: textColor;
+  }
+  .post-content {
+    font-family: $quickSand;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin: 1rem;
+    color: $textColorDark;
+  }
+  .post-social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    .post-dots {
+      color: $primaryColor;
+      max-height: 1.9rem;
+      margin-left: 1rem;
+    }
+    .post-heart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primaryColor;
+      border-radius: $boderRadiusLg;
+      width: 2.7rem;
+      height: 1.9rem;
+      color: #fff;
+      margin-left: 1rem;
+    }
+    .post-review {
+      font-family: Segoe UI;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 350;
+      color: $likeColor;
+      margin: 0.5rem 1rem;
+    }
+  }
+}

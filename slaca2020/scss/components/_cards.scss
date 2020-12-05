@@ -1,0 +1,70 @@
+@import "../util/colorsfonts";
+
+// ==================     CARD DEFAULT / RESUMO       ==================
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: $borderColor;
+  border-radius: $boderRadius;
+  margin: 1rem 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    border-bottom: $borderColor;
+    background-color: $headerColor;
+    margin-bottom: 0.5rem;
+    h2 {
+      font-family: $roboto;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-left: 1rem;
+      line-height: 2.5rem;
+      color: $ShadowCardColor;
+    }
+  }
+  &__body {
+    p {
+      font-family: $quickSand;
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 2.3rem;
+      letter-spacing: 0.02em;
+      margin: 1rem;
+      color: $textColor;
+      strong {
+        color: $primaryColor;
+        font-weight: 900;
+      }
+    }
+  }
+  &__input {
+    width: 98%;
+    // padding: 0 1rem;
+    margin: 1rem 1rem;
+    max-height: 3.9rem;
+    height: 3.9rem;
+    border: 0.1rem solid $borderForm;
+    border-radius: $boderRadius;
+    // margin-bottom: 1rem;
+    &:hover {
+      border: 0.1rem solid $primaryColor;
+    }
+    &:focus {
+      background-color: $headerColor;
+    }
+  }
+  label {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $primaryColor;
+    margin: 1rem;
+  }
+}
+
+// ==================     POST        ==================

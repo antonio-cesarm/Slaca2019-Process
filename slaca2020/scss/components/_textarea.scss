@@ -1,0 +1,71 @@
+@import "../util/colorsfonts";
+.editor {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid $borderForm;
+  border-radius: 0.3rem;
+  width: 98%;
+  height: 11.3rem;
+  position: relative;
+  margin: 2rem auto;
+  &:hover {
+    border: 0.1rem solid $headerColor;
+    box-shadow: 2px 2px 5px $primaryColor;
+  }
+  .fildText {
+    // box-shadow: 0.2rem 0.2rem 0.2rem $primaryColor;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 8.2rem;
+    border: 1px $borderForm solid;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    height: 3.1rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $borderForm;
+    border-radius: 0.3rem;
+    border: 0.1rem solid $borderForm;
+  }
+  .editor__buttons {
+    margin: 0 1rem;
+    display: flex;
+  }
+  .editor__enviar {
+    font-family: $quickSand;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 0rem 0rem 0.3rem 0rem;
+    background-image: $gradientColor;
+    height: 100%;
+    width: 20.5rem;
+    border: none;
+    color: #fff;
+  }
+  &__btn {
+    color: $secondaryColor;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: $headerColor;
+      border-radius: 0.3rem;
+    }
+  }
+  .btn-bold {
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  .btn-italic {
+    font-weight: 400;
+    font-style: italic;
+    margin: 0 1rem;
+  }
+}

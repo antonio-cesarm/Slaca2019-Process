@@ -1,0 +1,9 @@
+.news-content {
+  display: flex;
+  flex-direction: row;
+  .video-player {
+    flex-basis: 78.3rem;
+    height: 43.9rem;
+    border: 1px red solid;
+  }
+}

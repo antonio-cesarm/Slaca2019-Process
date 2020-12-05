@@ -1,0 +1,67 @@
+.aside-card {
+  // border: 1px red solid;
+  flex-basis: 24.2rem;
+  height: 43.9rem;
+  overflow-x: none;
+  overflow-y: scroll;
+  border: 0.1rem solid $colorGreyLight;
+  border-radius: 0.3rem;
+  margin-left: 2rem;
+  .card-header {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    border-bottom: $borderColor;
+    background-color: $headerColor;
+    h2 {
+      font-family: $roboto;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.5rem;
+      margin-left: 1rem;
+      color: $ShadowCardColor;
+    }
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    .presentation-aside {
+      font-family: $roboto;
+      font-size: 1.2rem;
+      line-height: 16.8px;
+      color: $colorAsidebar;
+    }
+    .authors-aside {
+      font-family: $roboto;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 22.75px;
+      color: $colorAsidebar;
+      .author-tittle {
+        font-weight: 700;
+        color: $colorAsidebar;
+      }
+    }
+    .sorce-aside {
+      font-family: $roboto;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.2rem;
+      color: $secondaryColor;
+    }
+  }
+}
+
+// scroll da SideBOX;
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+  background-color: $ColorScrollBar;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: $colorScrollSlider;
+}
