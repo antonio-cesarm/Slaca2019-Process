@@ -1,4 +1,4 @@
-.aside-card {
+.aside {
   // border: 1px red solid;
   flex-basis: 24.2rem;
   height: 43.9rem;
@@ -7,7 +7,7 @@
   border: 0.1rem solid $colorGreyLight;
   border-radius: 0.3rem;
   margin-left: 2rem;
-  .card-header {
+  &__header {
     display: flex;
     align-items: center;
     height: 4.5rem;
@@ -22,7 +22,7 @@
       color: $ShadowCardColor;
     }
   }
-  .card-body {
+  &__body {
     display: flex;
     flex-direction: column;
     padding: 1rem;

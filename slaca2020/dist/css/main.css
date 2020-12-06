@@ -29,7 +29,10 @@
     color: #5c5c5c; }
     .card__body p strong {
       color: #ed7839;
-      font-weight: 900; }
+      font-weight: 900;
+      cursor: pointer; }
+    .card__body p #read-content {
+      display: none; }
   .card__input {
     width: 98%;
     margin: 1rem 1rem;
@@ -49,7 +52,7 @@
     color: #ed7839;
     margin: 1rem; }
 
-nav {
+.nav {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -62,30 +65,30 @@ nav {
   height: 100%;
   box-shadow: 0.5rem 0.5rem 0.5rem #e7e7e7;
   background-color: #fff; }
-  nav .logo-title {
+  .nav__title {
     display: inline;
     height: 6.8rem;
     background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%); }
-    nav .logo-title h1 {
+    .nav__title h1 {
       text-align: center;
       font-size: 3rem;
       color: #fff; }
-  nav ul {
+  .nav ul {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0;
     padding: 0; }
-    nav ul li {
+    .nav ul li {
       display: flex; }
-      nav ul li a {
+      .nav ul li a {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 1.5rem;
         padding: 1rem 2rem;
         width: 100%;
         border-bottom: 0.2rem #ececec solid; }
-        nav ul li a:hover {
+        .nav ul li a:hover {
           background-color: #fdf1eb;
           border-left: 0.4rem solid transparent;
           border-image: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
@@ -128,52 +131,52 @@ header {
     padding: 0 2rem; }
     header button p {
       padding: 0 0.2rem; }
-  header .user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    font-family: "Roboto", sans-serif; }
-    header .user-info p {
-      color: #333333;
-      font-size: 1.5rem;
-      padding: 0;
-      margin: 0.5rem 0; }
-    header .user-info .user-email {
-      font-size: 1.4rem; }
   header .user-data {
     display: flex; }
-  header .user-avatar-model {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4.8rem;
-    width: 4.8rem;
-    color: #333333;
-    outline: none;
-    border: none;
-    border-radius: 50%;
-    margin-left: 1.5rem; }
-    header .user-avatar-model .content-avatar img {
-      width: 100%;
+    header .user-data .user-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      font-family: "Roboto", sans-serif; }
+      header .user-data .user-info p {
+        color: #333333;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0.5rem 0; }
+      header .user-data .user-info .user-email {
+        font-size: 1.4rem; }
+    header .user-data .user-avatar-model {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 50%; }
-    header .user-avatar-model .notification {
-      position: absolute;
-      top: -0.5rem;
-      right: -0.5rem;
-      width: 2.5rem;
-      height: 2.5rem;
-      background-color: #f85959;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      height: 4.8rem;
+      width: 4.8rem;
+      color: #333333;
+      outline: none;
+      border: none;
       border-radius: 50%;
-      z-index: 1; }
+      margin-left: 1.5rem; }
+      header .user-data .user-avatar-model .content-avatar img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; }
+      header .user-data .user-avatar-model .notification {
+        position: absolute;
+        top: -0.5rem;
+        right: -0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #f85959;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        z-index: 1; }
 
 section {
   margin-top: 1rem;
@@ -241,7 +244,7 @@ section {
 .news-content {
   display: flex;
   flex-direction: row; }
-  .news-content .video-player {
+  .news-content .video {
     flex-basis: 78.3rem;
     height: 43.9rem;
     border: 1px red solid; }
@@ -285,8 +288,7 @@ a {
   position: relative;
   margin: 2rem auto; }
   .editor:hover {
-    border: 0.1rem solid #fdf1eb;
-    box-shadow: 2px 2px 5px #ed7839; }
+    border: 0.1rem solid #ed7839; }
   .editor .fildText {
     padding: 0;
     margin: 0;
@@ -335,7 +337,7 @@ a {
     font-style: italic;
     margin: 0 1rem; }
 
-.aside-card {
+.aside {
   flex-basis: 24.2rem;
   height: 43.9rem;
   overflow-x: none;
@@ -343,38 +345,38 @@ a {
   border: 0.1rem solid #ececec;
   border-radius: 0.3rem;
   margin-left: 2rem; }
-  .aside-card .card-header {
+  .aside__header {
     display: flex;
     align-items: center;
     height: 4.5rem;
     border-bottom: 0.1rem solid #ececec;
     background-color: #fdf1eb; }
-    .aside-card .card-header h2 {
+    .aside__header h2 {
       font-family: "Roboto", sans-serif;
       font-size: 2rem;
       font-weight: 500;
       line-height: 2.5rem;
       margin-left: 1rem;
       color: #4e4e4e; }
-  .aside-card .card-body {
+  .aside__body {
     display: flex;
     flex-direction: column;
     padding: 1rem; }
-    .aside-card .card-body .presentation-aside {
+    .aside__body .presentation-aside {
       font-family: "Roboto", sans-serif;
       font-size: 1.2rem;
       line-height: 16.8px;
       color: #5c5c5c; }
-    .aside-card .card-body .authors-aside {
+    .aside__body .authors-aside {
       font-family: "Roboto", sans-serif;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 22.75px;
       color: #5c5c5c; }
-      .aside-card .card-body .authors-aside .author-tittle {
+      .aside__body .authors-aside .author-tittle {
         font-weight: 700;
         color: #5c5c5c; }
-    .aside-card .card-body .sorce-aside {
+    .aside__body .sorce-aside {
       font-family: "Roboto", sans-serif;
       font-size: 1.2rem;
       font-weight: 400;
@@ -450,3 +452,18 @@ a {
       font-weight: 350;
       color: #757575;
       margin: 0.5rem 1rem; }
+
+.footer {
+  display: flex;
+  border-top: 0.1rem solid #e7e7e7;
+  align-items: center;
+  margin-top: 2rem; }
+  .footer__img {
+    width: 25rem; }
+  .footer__text {
+    display: flex;
+    flex-direction: column; }
+    .footer__text p {
+      color: #725c5c;
+      font-family: "Quicksand", sans-serif;
+      font-size: 1.5rem; }

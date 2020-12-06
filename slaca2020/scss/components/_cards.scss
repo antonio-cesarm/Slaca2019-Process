@@ -38,6 +38,10 @@
       strong {
         color: $primaryColor;
         font-weight: 900;
+        cursor: pointer;
+      }
+      #read-content {
+        display: none;
       }
     }
   }

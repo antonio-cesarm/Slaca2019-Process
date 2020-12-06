@@ -9,8 +9,7 @@
   position: relative;
   margin: 2rem auto;
   &:hover {
-    border: 0.1rem solid $headerColor;
-    box-shadow: 2px 2px 5px $primaryColor;
+    border: 0.1rem solid $primaryColor;
   }
   .fildText {
     // box-shadow: 0.2rem 0.2rem 0.2rem $primaryColor;

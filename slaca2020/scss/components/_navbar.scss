@@ -1,6 +1,6 @@
 @import "../util/colorsfonts";
 
-nav {
+.nav {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -13,7 +13,7 @@ nav {
   height: 100%;
   box-shadow: 0.5rem 0.5rem 0.5rem $graylightColor;
   background-color: #fff;
-  .logo-title {
+  &__title {
     display: inline;
     height: 6.8rem;
     background: $gradientColor;
