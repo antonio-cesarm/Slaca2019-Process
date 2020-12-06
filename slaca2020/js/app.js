@@ -20,3 +20,21 @@ function read(){
         status = 0;
     }
 }
+
+// Pupop
+let close = 0;
+function closePopup(){
+    if (!close){
+        document.getElementById('popup').style.opacity = 1;
+        document.getElementById('popup').style.visibility = 'visible';
+        document.getElementById('popup').style.transform = 'scale(1)';
+        close = 1;
+        
+        
+    }else{
+        document.getElementById('popup').style.opacity = 0;
+        document.getElementById('popup').style.visibility = 'hidden';
+        document.getElementById('popup').style.transform = 'scale(0.4)';
+        close = 0;
+    }
+}

@@ -171,7 +171,7 @@
                     </div>
                 </div> <!--form-card-->
                 
-                <section class="post">
+                <section class="post" onclick="closePopup()" >
                     <h2 class="post-tittle">Assunto da pergunta aparece aqui</h2>
                     <p class="post-author">Carlos Henrique Santos</p>
                     <p class="post-content">
@@ -189,24 +189,54 @@
                     </div>
                 </section> <!--POST-->
                 
-                <section class="post">
-                    <h2 class="post-tittle">Assunto da pergunta aparece aqui</h2>
-                    <p class="post-author">Carlos Henrique Santos</p>
-                    <p class="post-content">
-                        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
-                    </p>
-                    <div class="post-social">
-                        <div class="post-dots">
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div> 
-                        <div class="post-heart">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <p class="post-review">1 like</p>
-                        <p class="post-review">1 resposta</p>
-                    </div>
-                </section> <!--POST-->
+                
             </div><!--CONTAINER-->
+
+
+            <!--POPUP FULLSCREEN-->
+            <div id="popup">
+                <button class="close-popup" onclick="closePopup()">&times;</button>
+                <div class="popup__content">
+                    <div class="popup__body">
+                        <section class="post">
+                            <h2 class="post-tittle">Assunto da pergunta aparece aqui</h2>
+                            <p class="post-author">Carlos Henrique Santos</p>
+                            <p class="post-content">
+                                Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                            </p>
+                            <div class="post-social">
+                                <div class="post-dots">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div> 
+                                <div class="post-heart">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <p class="post-review">1 like</p>
+                                <p class="post-review">1 resposta</p>
+                            </div>
+                        </section>
+
+                        <section class="answer">
+                            
+                            <div class="answer__avatar">
+                                <div class="answer__avatar__container">
+                                    <img class="answer__avatar__container__img" src="../img/user-avar02.jpg" alt="PhotoUser">
+                                    <p class="answer__avatar__container__img-name">Antonio Cesar</p>
+                                    <p class="answer__avatar__container__img-nickname">@CezzMg</p> 
+                                </div>
+                                <div class="answer__avatar__content">
+                                    <h2>Resposta da pergunta: </h2>
+                                    <h3> Pergunta Feita pelo Usuario aparece aqui.</h3> 
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, laudantium. Officia quod, asperiores nemo cupiditate, non repellendus voluptatibus rem explicabo consequuntur numquam eveniet ad possimus voluptatum nobis deleniti sed totam?
+                                    </p>
+                                </div>
+                            </div>                                                    
+                        </section>                          
+                    </div>
+                </div>
+            </div><!--POPUP FULLSCREEN-->
+
             <footer class="footer container">
                 <img class="footer__img" src="../img/footer_logo.jpg" alt="Logo da empresa">
                 <div class="footer__text">
@@ -217,7 +247,7 @@
                         Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científica fomentado pelos encontros e aumentando o impacto do evento.
                     </p>
                 </div>
-            </footer>
+            </footer><!--Footer-->
         </main>         
         <script src="/js/app.js"></script>
 </body>

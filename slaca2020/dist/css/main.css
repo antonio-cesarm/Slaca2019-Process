@@ -467,3 +467,82 @@ a {
       color: #725c5c;
       font-family: "Quicksand", sans-serif;
       font-size: 1.5rem; }
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(77, 77, 77, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.4);
+  transition: all 0.5s; }
+  #popup__content .popup__body {
+    padding: 2rem; }
+
+.close-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  position: absolute;
+  color: #725c5c;
+  background-color: #ed7839;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  top: 31%;
+  right: 6%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10; }
+
+.answer {
+  border: 0.1rem solid #e7e7e7;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem #e7e7e7;
+  background-color: #fff;
+  margin: 1rem 0; }
+  .answer__avatar {
+    display: flex; }
+    .answer__avatar__container {
+      display: flex;
+      flex-direction: column;
+      border-right: 0.1rem solid #e7e7e7;
+      padding: 1rem;
+      margin: 0.5rem; }
+      .answer__avatar__container__img {
+        width: 8rem;
+        border-radius: 50%; }
+        .answer__avatar__container__img-name {
+          font-family: "Quicksand", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin: 1rem 0; }
+        .answer__avatar__container__img-nickname {
+          font-family: "Quicksand", sans-serif;
+          font-size: 1.2rem;
+          font-weight: 400;
+          margin: 0 0 1.5rem 0; }
+    .answer__avatar__content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1rem;
+      max-width: 80%; }
+      .answer__avatar__content h2 {
+        color: #ed7839; }
+      .answer__avatar__content h3 {
+        color: #ed7839; }
+      .answer__avatar__content p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: #725c5c; }

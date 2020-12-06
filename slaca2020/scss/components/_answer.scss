@@ -1,0 +1,51 @@
+.answer {
+  border: 0.1rem solid $graylightColor;
+  border-radius: $boderRadiusLg;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem $graylightColor;
+  background-color: #fff;
+  margin: 1rem 0;
+  &__avatar {
+    display: flex;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      border-right: 0.1rem solid $graylightColor;
+      padding: 1rem;
+      margin: 0.5rem;
+      &__img {
+        width: 8rem;
+        border-radius: 50%;
+        &-name {
+          font-family: $quickSand;
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin: 1rem 0;
+        }
+        &-nickname {
+          font-family: $quickSand;
+          font-size: 1.2rem;
+          font-weight: 400;
+          margin: 0 0 1.5rem 0;
+        }
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1rem;
+      max-width: 80%;
+      h2 {
+        color: $primaryColor;
+      }
+      h3 {
+        color: $primaryColor;
+      }
+      p {
+        font-family: $quickSand;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: $secondaryColor;
+      }
+    }
+  }
+}
