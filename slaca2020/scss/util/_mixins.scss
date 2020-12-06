@@ -1,0 +1,43 @@
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+@mixin flexCollumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexCenterCollumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin flexAlignJustifyCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCentralCollumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin cardHeaders {
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: $borderColor;
+  background-color: $headerColor;
+}
+
+@mixin paragraphDefault {
+  font-family: $quickSand;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2.3rem;
+  letter-spacing: 0.02em;
+  margin: 1rem;
+  color: $textColor;
+}

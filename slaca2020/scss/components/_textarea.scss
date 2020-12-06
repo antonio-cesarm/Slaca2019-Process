@@ -1,7 +1,8 @@
 @import "../util/colorsfonts";
+@import "../util/mixins";
+
 .editor {
-  display: flex;
-  flex-direction: column;
+  @include flexCollumn;
   border: 0.1rem solid $borderForm;
   border-radius: 0.3rem;
   width: 98%;
@@ -12,7 +13,6 @@
     border: 0.1rem solid $primaryColor;
   }
   .fildText {
-    // box-shadow: 0.2rem 0.2rem 0.2rem $primaryColor;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -20,10 +20,8 @@
     border: 1px $borderForm solid;
   }
   &__nav {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     justify-content: space-between;
-    border: 1px solid red;
     height: 3.1rem;
     width: 100%;
     position: absolute;
@@ -46,6 +44,7 @@
     height: 100%;
     width: 20.5rem;
     border: none;
+    cursor: pointer;
     color: #fff;
   }
   &__btn {

@@ -1,5 +1,7 @@
+@import "../util/colorsfonts";
+@import "../util/mixins";
+
 .aside {
-  // border: 1px red solid;
   flex-basis: 24.2rem;
   height: 43.9rem;
   overflow-x: none;
@@ -8,8 +10,7 @@
   border-radius: 0.3rem;
   margin-left: 2rem;
   &__header {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     height: 4.5rem;
     border-bottom: $borderColor;
     background-color: $headerColor;
@@ -23,8 +24,7 @@
     }
   }
   &__body {
-    display: flex;
-    flex-direction: column;
+    @include flexCollumn;
     padding: 1rem;
     .presentation-aside {
       font-family: $roboto;

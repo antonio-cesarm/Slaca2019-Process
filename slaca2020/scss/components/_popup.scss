@@ -1,8 +1,8 @@
+@import "../util/colorsfonts";
+@import "../util/mixins";
+
 #popup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCentralCollumn;
   padding: 2rem;
   top: 0;
   left: 0;
@@ -25,9 +25,7 @@
   }
 }
 .close-popup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexAlignJustifyCenter;
   font-size: 5rem;
   position: absolute;
   color: $secondaryColor;
@@ -43,6 +41,7 @@
   cursor: pointer;
   z-index: 10;
   &:hover {
+    border: none;
     opacity: 1;
     box-shadow: 0 0.2rem 0.5rem $primaryColor;
   }

@@ -1,19 +1,19 @@
+@import "../util/colorsfonts";
+@import "../util/mixins";
+
 .footer {
-  display: flex;
+  @include flexAlignCenter;
   border-top: 0.1rem solid $graylightColor;
-  align-items: center;
   margin-top: 2rem;
   &__img {
     width: 25rem;
   }
   &__text {
-    display: flex;
-    flex-direction: column;
-
+    @include flexCollumn;
     p {
-      color: $secondaryColor;
       font-family: $quickSand;
       font-size: 1.5rem;
+      color: $secondaryColor;
     }
   }
 }

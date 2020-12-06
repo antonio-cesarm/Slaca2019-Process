@@ -1,3 +1,5 @@
+@import "../util/colorsfonts";
+@import "../util/mixins";
 .answer {
   border: 0.1rem solid $graylightColor;
   border-radius: $boderRadiusLg;
@@ -7,8 +9,7 @@
   &__avatar {
     display: flex;
     &__container {
-      display: flex;
-      flex-direction: column;
+      @include flexCollumn;
       border-right: 0.1rem solid $graylightColor;
       padding: 1rem;
       margin: 0.5rem;
@@ -30,8 +31,7 @@
       }
     }
     &__content {
-      display: flex;
-      flex-direction: column;
+      @include flexCollumn;
       padding-left: 1rem;
       max-width: 80%;
       h2 {

@@ -1,3 +1,6 @@
+@import "../util/colorsfonts";
+@import "../util/mixins";
+
 header {
   overflow: hidden;
   background-color: $colorHeader;
@@ -5,8 +8,7 @@ header {
   margin: 0;
   padding: 0;
   .header-box {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     justify-content: space-between;
     .header-tittle p {
       font-size: 1.4rem;
@@ -24,9 +26,7 @@ header {
     }
   }
   button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexAlignJustifyCenter;
     color: $secondaryColor;
     border: 0.1rem solid $secondaryColor;
     background-color: $colorHeader;
@@ -42,16 +42,15 @@ header {
   .user-data {
     display: flex;
     .user-info {
-      display: flex;
-      flex-direction: column;
+      @include flexCollumn;
       align-items: flex-end;
       justify-content: center;
       font-family: $roboto;
       p {
-        color: #333333;
         font-size: 1.5rem;
-        padding: 0;
         margin: 0.5rem 0;
+        padding: 0;
+        color: #333333;
       }
       .user-email {
         font-size: 1.4rem;
@@ -59,37 +58,31 @@ header {
     }
 
     .user-avatar-model {
+      @include flexAlignJustifyCenter;
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       height: 4.8rem;
       width: 4.8rem;
-      color: #333333;
       outline: none;
       border: none;
       border-radius: 50%;
       margin-left: 1.5rem;
+      color: #333333;
       .content-avatar img {
+        @include flexAlignJustifyCenter;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         border-radius: 50%;
       }
 
       .notification {
+        @include flexAlignJustifyCenter;
         position: absolute;
         top: -0.5rem;
         right: -0.5rem;
         width: 2.5rem;
         height: 2.5rem;
+        border-radius: 50%;
         background-color: $colorNotification;
         color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
         z-index: 1;
       }
     }

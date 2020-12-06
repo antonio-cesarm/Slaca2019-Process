@@ -1,6 +1,8 @@
+@import "../util/colorsfonts";
+@import "../util/mixins";
+
 .post {
-  display: flex;
-  flex-direction: column;
+  @include flexCollumn;
   border: 0.1rem solid $graylightColor;
   border-radius: $boderRadiusLg;
   box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem $graylightColor;
@@ -36,8 +38,7 @@
     color: $textColorDark;
   }
   .post-social {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     margin-bottom: 1rem;
     .post-dots {
       color: $primaryColor;
@@ -45,9 +46,7 @@
       margin-left: 1rem;
     }
     .post-heart {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexAlignJustifyCenter;
       background-color: $primaryColor;
       border-radius: $boderRadiusLg;
       width: 2.7rem;

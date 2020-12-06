@@ -1,8 +1,8 @@
 @import "../util/colorsfonts";
+@import "../util/mixins";
 
 .nav {
-  display: flex;
-  flex-direction: column;
+  @include flexCollumn;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -24,8 +24,7 @@
     }
   }
   ul {
-    display: flex;
-    flex-direction: column;
+    @include flexCollumn;
     width: 100%;
     margin: 0;
     padding: 0;
