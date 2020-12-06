@@ -74,3 +74,32 @@ function showForm(){
         i = 0;
     }
 }
+
+
+var video = document.querySelector("#video-content");
+var volume = document.querySelector("#video-content")
+
+function playPause (){
+    if (video.paused){
+        video.play();
+        document.querySelector(".btnPlay").style.display = "none";
+        document.querySelector(".btnPause").style.display = "inline-block";
+    }else {
+        video.pause();
+        document.querySelector(".btnPlay").style.display = "inline-block";
+        document.querySelector(".btnPause").style.display = "none";
+    }
+}
+
+
+function volumeMuted(){
+    volume.muted = true;
+    document.querySelector(".btnMuted").style.display = "inline-block";
+    document.querySelector(".btnVolume").style.display = "none";
+}
+
+function volumeUp(){
+    volume.muted = false;
+    document.querySelector(".btnVolume").style.display = "inline-block";
+    document.querySelector(".btnMuted").style.display = "none";
+}

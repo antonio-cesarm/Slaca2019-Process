@@ -315,10 +315,75 @@ section {
 .news-content {
   display: flex;
   flex-direction: row; }
-  .news-content .video {
-    flex-basis: 78.3rem;
-    height: 43.9rem;
-    border: 1px red solid; }
+  .news-content .video-palyer {
+    display: flex; }
+    .news-content .video-palyer .video {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 78.3rem;
+      height: 43.9rem;
+      z-index: 10;
+      color: #fff;
+      position: relative; }
+      .news-content .video-palyer .video .fade {
+        width: 78.3rem;
+        height: 43.9rem;
+        background-color: rgba(141, 53, 6, 0.5);
+        position: absolute;
+        z-index: 2;
+        transition: all 0.3s; }
+        .news-content .video-palyer .video .fade:hover {
+          display: none;
+          visibility: hidden; }
+      .news-content .video-palyer .video #video-content {
+        width: 78.3rem;
+        height: 43.9rem;
+        position: absolute;
+        z-index: -1; }
+      .news-content .video-palyer .video h2 {
+        margin: 2rem 1rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 2.5rem; }
+      .news-content .video-palyer .video__bottom {
+        display: flex; }
+      .news-content .video-palyer .video__img {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem; }
+        .news-content .video-palyer .video__img .player__option {
+          display: flex;
+          justify-content: space-between;
+          margin: 1rem; }
+          .news-content .video-palyer .video__img .player__option .btnPause {
+            display: none; }
+          .news-content .video-palyer .video__img .player__option .btnMuted {
+            display: none; }
+        .news-content .video-palyer .video__img .video__contianer {
+          display: flex;
+          align-items: center;
+          padding: 1rem; }
+          .news-content .video-palyer .video__img .video__contianer img {
+            border: 0.1rem solid #ed7839;
+            margin-bottom: 2rem;
+            border-radius: 50%; }
+          .news-content .video-palyer .video__img .video__contianer-img {
+            margin-left: 1rem; }
+            .news-content .video-palyer .video__img .video__contianer-img h1 {
+              font-family: "Roboto", sans-serif;
+              font-weight: 900;
+              font-size: 3.4rem;
+              line-height: 2.5rem;
+              padding: 0;
+              margin: 0; }
+            .news-content .video-palyer .video__img .video__contianer-img h3 {
+              font-family: "Roboto", sans-serif;
+              font-weight: 900;
+              font-size: 2rem;
+              line-height: 2.5rem;
+              padding: 0; }
 
 html {
   font-size: 10px; }

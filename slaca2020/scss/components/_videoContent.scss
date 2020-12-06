@@ -4,9 +4,90 @@
 .news-content {
   display: flex;
   flex-direction: row;
-  .video {
-    flex-basis: 78.3rem;
-    height: 43.9rem;
-    border: 1px red solid;
+  .video-palyer {
+    display: flex;
+    .video {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 78.3rem;
+      height: 43.9rem;
+      z-index: 10;
+      color: #fff;
+      position: relative;
+      .fade {
+        width: 78.3rem;
+        height: 43.9rem;
+        background-color: rgba(141, 53, 6, 0.5);
+        position: absolute;
+        z-index: 2;
+        transition: all 0.3s;
+        &:hover {
+          display: none;
+          visibility: hidden;
+        }
+      }
+      #video-content {
+        width: 78.3rem;
+        height: 43.9rem;
+        position: absolute;
+        z-index: -1;
+      }
+      h2 {
+        margin: 2rem 1rem;
+        font-family: $roboto;
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      &__bottom {
+        display: flex;
+      }
+      &__img {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+        .player__option {
+          display: flex;
+          justify-content: space-between;
+          margin: 1rem;
+          .btnPause {
+            display: none;
+            // margin: 1rem;
+          }
+          .btnMuted {
+            display: none;
+          }
+        }
+        .video__contianer {
+          display: flex;
+          align-items: center;
+          padding: 1rem;
+          img {
+            border: 0.1rem solid $primaryColor;
+            margin-bottom: 2rem;
+            border-radius: 50%;
+          }
+          &-img {
+            margin-left: 1rem;
+            h1 {
+              font-family: $roboto;
+              font-weight: 900;
+              font-size: 3.4rem;
+              line-height: 2.5rem;
+              padding: 0;
+              margin: 0;
+            }
+            h3 {
+              font-family: $roboto;
+              font-weight: 900;
+              font-size: 2rem;
+              line-height: 2.5rem;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
