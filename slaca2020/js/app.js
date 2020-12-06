@@ -82,12 +82,21 @@ var volume = document.querySelector("#video-content")
 function playPause (){
     if (video.paused){
         video.play();
-        document.querySelector(".btnPlay").style.display = "none";
+        document.querySelector(".btnPlay").style.display = "none"; 
         document.querySelector(".btnPause").style.display = "inline-block";
+        document.querySelector(".video__contianer-img").style.visibility = "hidden";
+        document.querySelector(".imge__video").style.visibility = "hidden";
+        document.querySelector(".video__tittle").style.visibility = "hidden";
+        document.querySelector(".fade").style.visibility = "hidden";
     }else {
         video.pause();
         document.querySelector(".btnPlay").style.display = "inline-block";
         document.querySelector(".btnPause").style.display = "none";
+        document.querySelector(".video__contianer-img").style.visibility = "visible";
+        document.querySelector(".imge__video").style.visibility = "visible";
+        document.querySelector(".video__tittle").style.visibility = "visible";
+        document.querySelector(".fade").style.visibility = "visible";
+        
     }
 }
 
@@ -103,3 +112,6 @@ function volumeUp(){
     document.querySelector(".btnVolume").style.display = "inline-block";
     document.querySelector(".btnMuted").style.display = "none";
 }
+
+
+
