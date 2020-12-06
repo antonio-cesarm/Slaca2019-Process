@@ -496,6 +496,8 @@ a {
   position: absolute;
   color: #725c5c;
   background-color: #ed7839;
+  opacity: 0.8;
+  transition: all 0.3s;
   border: none;
   width: 5rem;
   height: 5rem;
@@ -504,6 +506,9 @@ a {
   border-radius: 50%;
   cursor: pointer;
   z-index: 10; }
+  .close-popup:hover {
+    opacity: 1;
+    box-shadow: 0 0.2rem 0.5rem #ed7839; }
 
 .answer {
   border: 0.1rem solid #e7e7e7;

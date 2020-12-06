@@ -21,7 +21,7 @@ function read(){
     }
 }
 
-// Pupop
+// Pupop FullScreen
 let close = 0;
 function closePopup(){
     if (!close){

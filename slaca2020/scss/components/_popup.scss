@@ -32,6 +32,8 @@
   position: absolute;
   color: $secondaryColor;
   background-color: $primaryColor;
+  opacity: 0.8;
+  transition: all 0.3s;
   border: none;
   width: 5rem;
   height: 5rem;
@@ -40,4 +42,8 @@
   border-radius: 50%;
   cursor: pointer;
   z-index: 10;
+  &:hover {
+    opacity: 1;
+    box-shadow: 0 0.2rem 0.5rem $primaryColor;
+  }
 }
