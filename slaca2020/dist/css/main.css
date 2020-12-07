@@ -199,9 +199,11 @@ header {
     border-radius: 4px;
     width: 7.5rem;
     height: 3.4rem;
-    padding: 0 2rem; }
+    padding: 0 2rem;
+    cursor: pointer; }
     header button p {
-      padding: 0 0.2rem; }
+      padding: 0 0.2rem;
+      cursor: pointer; }
   header .user-data {
     display: flex; }
     header .user-data .user-info {
@@ -281,7 +283,8 @@ section {
         background-color: #ed7839;
         border: none;
         border-radius: 0.4rem;
-        margin-left: 0.5rem; }
+        margin-left: 0.5rem;
+        cursor: pointer; }
       section .aside-buttons .buttons .btn-large {
         display: flex;
         align-items: center;
@@ -290,7 +293,8 @@ section {
         height: 3.1rem;
         font-family: Roboto;
         font-weight: 500;
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        cursor: pointer; }
         section .aside-buttons .buttons .btn-large p {
           margin-left: 0.5rem; }
       section .aside-buttons .buttons .btn-small {

@@ -33,6 +33,7 @@ section {
         border: none;
         border-radius: 0.4rem;
         margin-left: 0.5rem;
+        cursor: pointer;
       }
       .btn-large {
         @include flexAlignJustifyCenter;
@@ -41,6 +42,7 @@ section {
         font-family: Roboto;
         font-weight: 500;
         font-size: 1.6rem;
+        cursor: pointer;
         p {
           margin-left: 0.5rem;
         }
