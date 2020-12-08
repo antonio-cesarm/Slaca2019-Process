@@ -44,6 +44,20 @@
           border-image-slice: 1;
           border-bottom: none;
         }
+        &:active {
+          background-color: $colorHeader;
+          border-left: 0.4rem solid transparent;
+          border-image: $gradientColor;
+          border-image-slice: 1;
+          border-bottom: none;
+        }
+      }
+      .currentPage {
+        background-color: $colorHeader !important;
+        border-left: 0.4rem solid transparent !important;
+        border-image: $gradientColor !important;
+        border-image-slice: 1 !important;
+        border-bottom: none !important;
       }
     }
   }

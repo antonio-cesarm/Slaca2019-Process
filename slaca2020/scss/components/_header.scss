@@ -90,3 +90,22 @@ header {
     }
   }
 }
+
+.dropdown {
+  button {
+    @include flexAlignJustifyCenter;
+    color: $secondaryColor;
+    border: 0.1rem solid $secondaryColor;
+    background-color: $colorHeader;
+    font-family: $roboto;
+    border-radius: 0.4rem;
+    width: 7.5rem;
+    height: 3.4rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    p {
+      padding: 0 0.2rem;
+      cursor: pointer;
+    }
+  }
+}

@@ -7,14 +7,19 @@
   .video-palyer {
     display: flex;
     .video {
-      display: flex;
-      flex-direction: column;
+      @include flexCollumn;
       justify-content: space-between;
       width: 78.3rem;
       height: 43.9rem;
       z-index: 10;
       color: #fff;
       position: relative;
+      &__contianer {
+        z-index: 20;
+      }
+      &__tittle {
+        z-index: 20;
+      }
       .fade {
         width: 78.3rem;
         height: 43.9rem;
@@ -40,8 +45,7 @@
         display: flex;
       }
       &__img {
-        display: flex;
-        flex-direction: column;
+        @include flexCollumn;
         margin: 0 3rem;
         .player__option {
           display: flex;
@@ -67,8 +71,7 @@
           }
         }
         .video__contianer {
-          display: flex;
-          align-items: center;
+          @include flexAlignCenter;
           padding: 1rem;
           img {
             border: 0.1rem solid $primaryColor;

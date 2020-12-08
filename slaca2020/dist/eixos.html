@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontwesome/css/all.css">
+    <script defer src="css/fontwesome/js/all.js"></script> <!--load all styles -->
+    
+</head>
+<body>
+        <nav class="nav">
+            <div class="nav__title">
+                <h1>SLACA 2019</h1>
+            </div>
+            <div class="nav__image">
+                <!-- Svg from Figma -->
+                <img src="../img/logo_nav.svg" alt="Logo da empresa no Menu">
+            </div>
+            <ul>
+                <li><a href="index.html">Apresentação</a></li>
+                <li><a href="comites.html">Comitês</a></li>
+                <li><a href="autores.html" >Autores</a></li>
+                <li><a href="eixos.html" class="currentPage">Eixos temáticos</a></li>
+                <li><a href="trabalhos.html">Trabalhos</a></li>                
+                <li><a href="contact.html">Contatos</a></li>
+            </ul>
+        </nav> <!--NAVBAR-->
+        <main class="content">
+            <header>
+                <div class="container">
+                    <div class="header-box">
+                        <div class="header-tittle">
+                            <p>Eixos temáticos</p>
+                            <h1>Eixos temáticos</h1>
+                            <p>Eixos temáticos</p>
+                        </div>
+                        <button><i class="fas fa-globe"></i><p>PT,BR</p><i class="fas fa-caret-down"></i></button>
+                        <div class="user-data">
+                            <div class="user-info">
+                                <p>Bem-Vindo!</p>
+                                <p class="user-email">cezinha@galoascience.com</p>
+                            </div>  
+                            <div class="user-avatar-model">
+                                <div class="content-avatar"><img src="../img/user-avar02.jpg" alt=""></div>
+                                <div class="notification">12</div>
+                            </div>                          
+                        </div>
+                        
+                    </div>
+                </div>
+            </header> <!-- HEADER --> 
+            <div class="container">
+            <div class="card__topico" id="topico-view">
+                <div class="card__topico__header">
+                    <h2>Discussões</h2>
+                </div>
+                <div class="card__topico__body">
+                    <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
+                    <div class="card__topico__body-img">
+                        <img src="../img/ideia01.svg" alt="">
+                        <img src="../img/ideia02.svg" alt="">
+                        <img src="../img/ideia03.svg" alt="">
+                    </div>
+                        <p>
+                            Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+                        </p>
+                        <button onclick="showForm()"><i class="fas fa-plus btn-i"></i>criar tópico</button>
+                </div>
+            </div> <!-- CARD CRIAR TOPICO-->
+            <div class="card " id="card-view">
+                    <div class="card__header">
+                        <h2>Discussões</h2>
+                    </div>
+                    <div class="card__body">
+                    <label>Assunto</label>
+                        <input class="card__input"  placeholder="Defina um tópico sucinto para notificar os autores..." type="text" name="titulo">
+                    <label>Assunto</label>
+                        <div class="editor">
+                            <div class="editor__text">
+                                <div class="editor__nav">
+                                    <div class="editor__buttons">
+                                        <button class="editor__btn btn-bold">B</button>
+                                        <button class="editor__btn btn-italic">I</button>
+                                    </div>                            
+                                    <button class="editor__enviar" onclick="showForm()">Enviar</button>
+                                </div>
+                                <iframe class="fildText" name="fildText" frameborder="0"></iframe>
+                            </div>                            
+                        </div>
+                    </div>
+                </div> <!--form-card-->
+            </div>
+            
+ 
+            <footer class="footer container">
+                <img class="footer__img" src="../img/footer_logo.jpg" alt="Logo da empresa">
+                <div class="footer__text">
+                    <p> 
+                        <strong>preservar a menória do evendo e ampliar o acesso ao conhecimento científico </strong>gerado em eventos é a razão de ser da plataforma Galóa Proceedings.
+                    </p>
+                    <p>
+                        Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científica fomentado pelos encontros e aumentando o impacto do evento.
+                    </p>
+                </div>
+            </footer><!--Footer-->
+        </main>         
+        <script src="/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+    
