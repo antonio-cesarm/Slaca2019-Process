@@ -141,6 +141,8 @@
     height: 6.8rem;
     background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%); }
     .nav__title h1 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
       text-align: center;
       font-size: 3rem;
       color: #fff; }
@@ -189,12 +191,14 @@ header {
     align-items: center;
     justify-content: space-between; }
     header .header-box .header-tittle p {
+      font-family: "Roboto", sans-serif;
       font-size: 1.4rem;
       padding: 0 0;
       margin: 0;
       margin: 0.5rem 0;
       color: #725c5c; }
     header .header-box .header-tittle h1 {
+      font-family: "Roboto", sans-serif;
       font-size: 2.2rem;
       font-weight: normal;
       padding: 0;
@@ -290,9 +294,10 @@ section {
     align-items: center;
     justify-content: center;
     flex-basis: 78.3rem;
-    height: 5.2rem; }
+    height: 5.2rem;
+    font-family: "Roboto", sans-serif; }
     section .section-tittle p {
-      font-family: "Quicksand", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 2rem;
       font-weight: 900;
       color: #ed7839;
@@ -326,9 +331,13 @@ section {
         cursor: pointer; }
         section .aside-buttons .buttons .btn-large p {
           color: #fff;
-          margin-left: 0.5rem; }
+          margin-left: 0.5rem;
+          font-family: Roboto;
+          font-weight: 500; }
           section .aside-buttons .buttons .btn-large p a {
-            color: #fff; }
+            color: #fff;
+            font-family: Roboto;
+            font-weight: 500; }
       section .aside-buttons .buttons .btn-small {
         display: flex;
         align-items: center;

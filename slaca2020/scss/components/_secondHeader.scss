@@ -10,8 +10,9 @@ section {
     @include flexAlignJustifyCenter;
     flex-basis: 78.3rem;
     height: 5.2rem;
+    font-family: $roboto;
     p {
-      font-family: $quickSand;
+      font-family: $roboto;
       font-size: 2rem;
       font-weight: 900;
       color: $primaryColor;
@@ -46,9 +47,13 @@ section {
         p {
           color: #fff;
           margin-left: 0.5rem;
+          font-family: Roboto;
+          font-weight: 500;
 
           a {
             color: #fff;
+            font-family: Roboto;
+            font-weight: 500;
           }
         }
       }
