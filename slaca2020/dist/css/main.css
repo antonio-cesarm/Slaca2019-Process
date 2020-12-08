@@ -325,7 +325,10 @@ section {
         font-size: 1.6rem;
         cursor: pointer; }
         section .aside-buttons .buttons .btn-large p {
+          color: #fff;
           margin-left: 0.5rem; }
+          section .aside-buttons .buttons .btn-large p a {
+            color: #fff; }
       section .aside-buttons .buttons .btn-small {
         display: flex;
         align-items: center;

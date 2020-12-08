@@ -44,7 +44,12 @@ section {
         font-size: 1.6rem;
         cursor: pointer;
         p {
+          color: #fff;
           margin-left: 0.5rem;
+
+          a {
+            color: #fff;
+          }
         }
       }
       .btn-small {
